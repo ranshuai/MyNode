@@ -43,3 +43,26 @@
         /** 块的注释规范
         *
         */
+
+  Express
+        Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架.
+        http://www.expressjs.com.cn/
+
+        Express 应用生成器 http://www.expressjs.com.cn/starter/generator.html
+        $ npm install express-generator -g
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

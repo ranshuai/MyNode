@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "1.在github 上托管源代码\r   在npm上发布自己的模块\r   在代码中使用第三方的模块包\r   这三者形成了node应用的闭环",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranshuai/MyNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranshuai/MyNode/issues"
+  },
+  "homepage": "https://github.com/ranshuai/MyNode#readme"
+}

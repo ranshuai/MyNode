@@ -51,7 +51,8 @@
         Express 应用生成器 http://www.expressjs.com.cn/starter/generator.html
         $ npm install express-generator -g
 
-
+  版本号的规则
+  <version> (0.0.0) 主版本号.次版本号.修正版本号
 
 
 

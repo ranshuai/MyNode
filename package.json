@@ -1,4 +1,4 @@
-{
+ {
   "name": "y",
   "version": "1.0.0",
   "description": "1.在github 上托管源代码\r   在npm上发布自己的模块\r   在代码中使用第三方的模块包\r   这三者形成了node应用的闭环",

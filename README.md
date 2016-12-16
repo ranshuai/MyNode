@@ -44,16 +44,54 @@
         *
         */
 
+
+  版本号的规则
+  <version> (0.0.0) 主版本号.次版本号.修正版本号
+
+   supervisor   运行 supervisor --harmony index 启动程序，
+   会监听当前目录下 node 和 js 后缀的文件 当这些文件发生改动时，supervisor 会自动重启程序。
+
   Express
         Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架.
         http://www.expressjs.com.cn/
 
         Express 应用生成器 http://www.expressjs.com.cn/starter/generator.html
         $ npm install express-generator -g
+   var express = require('express');
+     var app = express();
+     app.get('/', function(req, res) {
+       res.send('hello, express');
+     });
+     生成一个 express 实例 app，挂载了一个根路由控制器
 
-  版本号的规则
-  <version> (0.0.0) 主版本号.次版本号.修正版本号
+    路由
+    path-to-regexp
+    req.query: 解析后的 url 中的 querystring，如 ?name=haha，req.query 的值为 {name: 'haha'}
+    req.params: 解析 url 中的占位符，如 /:name，访问 /haha，req.params 的值为 {name: 'haha'}
+    req.body: 解析后请求体，需使用相关的模块，如 body-parser，请求体为 {"name": "haha"}，则 req.body 为 {name: 'haha'}
 
+    var express = require('express');
+    var router = express.Router();
+
+    router.get('/', function(req, res) {
+      res.send('hello, express');
+    });
+    每个路由文件通过生成一个 express.Router 实例 router 并导出
+    module.exports = router;
+
+    var express = require('express');
+    var app = express();
+    var indexRouter = require('./routes/index');
+    var userRouter = require('./routes/users');
+
+    app.use('/', indexRouter);
+    app.use('/users', userRouter);
+
+    app.listen(3000);
+
+    模板引擎
+    ejs
+    app.set('view engine', 'ejs');// 设置模板引擎为 ejs
 
 
 
